@@ -1,35 +1,38 @@
 body {
   background: black;
-  background: radial-gradient(circle at center, #3a2c1b 0%, #070605 100%);
+  background: radial-gradient(circle at center, #0f172a 0%, #020617 100%);
   background-attachment: fixed;
-  color: #d1c4a9;
+  color: #94a3b8;
 }
 
 h1 {
-  text-align: center;
+  text-align: flex-start;
+  font-size: 24px;
   letter-spacing: 3px;
   font-family: "Cinzel", serif;
-  color: #c5a059;
-  text-shadow: 0 0 10px rgba(0, 242, 254, 0.5);
+  color: #38bdf8;
+  text-shadow: 0 0 10px rgba(56, 191, 248, 0.438);
+  padding: 5px;
 }
 
 .nav {
   display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(15, 23, 42, 0.8);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-h2 {
-  text-align: flex-start;
+.navlinks {
+  font-size: 20px;
+  text-align: end;
   letter-spacing: 3px;
   font-family: "EB Garamond", serif;
-  color: #06ffff;
-  text-shadow: 0 0 10px rgba(0, 242, 254, 0.5);
 }
 
-a {
-  color: #06ffff;
+.navlinks a {
+  color: #38bdf8;
+  text-shadow: 0 0 10px rgba(56, 189, 248, 0.25);
   text-decoration: underline;
   display: inline-block;
   transition:
@@ -38,8 +41,8 @@ a {
   padding: 2px;
 }
 
-.nav h2 a:hover {
-  color: #00ffff;
+.navlinks a:hover {
+  color: #ffffff;
   transform: scale(1.2);
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
