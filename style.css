@@ -1,0 +1,48 @@
+body {
+  background: black;
+  background: radial-gradient(circle at center, #3a2c1b 0%, #070605 100%);
+  background-attachment: fixed;
+  color: #d1c4a9;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 3px;
+  font-family: "Cinzel", serif;
+  color: #c5a059;
+  text-shadow: 0 0 10px rgba(0, 242, 254, 0.5);
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+h2 {
+  text-align: flex-start;
+  letter-spacing: 3px;
+  font-family: "EB Garamond", serif;
+  color: #06ffff;
+  text-shadow: 0 0 10px rgba(0, 242, 254, 0.5);
+}
+
+a {
+  color: #06ffff;
+  text-decoration: underline;
+  display: inline-block;
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+  padding: 2px;
+}
+
+.nav h2 a:hover {
+  color: #00ffff;
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
