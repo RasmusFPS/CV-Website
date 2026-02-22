@@ -3,28 +3,127 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio - Rasmus Andersen</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Navbaren -->
     <div class="nav">
-          <h1>My Portfolio</h1>
-        <h2 class="navlinks">
-          <a href="index.html">Home</a>
-          <a href="cv.html">CV</a>
-          <a href="portfolio.html">Portfolio</a>
-          <a href="contact.html">Contact</a>
-          <a href="About-me.html">About</a>
-        </h2>
-
+      <h1>Rasmus Andersen</h1>
+      <h2 class="navlinks">
+        <a href="index.html">Home</a>
+        <a href="cv.html">Cv</a>
+        <a href="portfolio.html" class="active">Portfolio</a>
+        <a href="contact.html">Contact</a>
+        <a href="Lorem.html">Lorem</a>
+      </h2>
     </div>
-    <h2>
-      Here are some of my projects:
-      <ul>
-        <li> <a href="https://github.com/RasmusFPS/Pim">PIM</a>: Drawing app that has features like vim.</li>
-        <li>Library: A library management system.</li>
-        </li>
-      </ul>
-    </h2>
+
+    <section class="projects-section">
+      <h2 class="section-title">My projects!</h2>
+
+      <div class="project-container">
+        <div class="project-card">
+          <div class="card-image">
+            <img src="assets/LIB.png" alt="Library Project" />
+          </div>
+          <div class="card-content">
+            <h3>Library</h3>
+            <p>A C# application that simulates a library.</p>
+            <a href="#project1" class="info">More info</a>
+          </div>
+        </div>
+
+        <div id="project1" class="overlay">
+          <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <h2>Bibliotek</h2>
+            <div>
+              <p>
+                I made a library application for school with C# where you are
+                able to login with a unique PIN and username. With this, you are
+                able to take loans, return books, and check availability of
+                books.
+              </p>
+              <p>
+                <strong>Github link:</strong>
+                <a href="https://github.com/RasmusFPS/Library">Library Repo</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="card-image">
+            <img src="assets/Bank.png" alt="Bank Project" />
+          </div>
+          <div class="card-content">
+            <h3>BankApp</h3>
+            <p>A group project that is made to simulate a safe bank app.</p>
+            <a href="#project2" class="info">More info</a>
+          </div>
+        </div>
+
+        <div id="project2" class="overlay">
+          <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <h2>BankApp</h2>
+            <div>
+              <p>
+                In this application you create a user or login as a user/admin.
+                You are able to create bank accounts, withdraw and deposit, take
+                loans and return the money for the loan.
+              </p>
+              <p>
+                <strong>Github link:</strong>
+                <a href="https://github.com/RasmusFPS/TDD-Bank"
+                  >TDD-Bank Repo</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="card-image">
+            <img src="assets/database.png" alt="Database Project" />
+          </div>
+          <div class="card-content">
+            <h3 class="text">School Database</h3>
+            <p>A school system application made with both SQL and C#.</p>
+            <a href="#project3" class="info">More info</a>
+          </div>
+        </div>
+
+        <div id="project3" class="overlay">
+          <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <h2>Database</h2>
+            <div>
+              <p>
+                A Database C# Project made with ADO.NET and Entity Framework to
+                simulate a school system.
+              </p>
+              <p>
+                <strong>Github link:</strong>
+                <a href="https://github.com/RasmusFPS/Labb_4"
+                  >School Manager Repo</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bar">
+      <div>
+        <p class="copyright">
+          © 2026 Rasmus Andersen, Varberg |
+          <a href="https://github.com/RasmusFPS">Github</a>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
