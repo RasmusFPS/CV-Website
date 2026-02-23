@@ -254,7 +254,13 @@ h1 {
   bottom: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
+}
+
+.lower-navbar {
+  padding: 1px;
+  background-color: rgb(15, 23, 42);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  font-family: ubuntu;
 }
 
 .contact-info {
